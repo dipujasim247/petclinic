@@ -2,9 +2,13 @@ package com.stornit.petclinic.model;
 
 public class Person {
 
+    //Person extends by Vet and Owner
+
+    //== Fields ==
     private String FirstName;
     private String LastName;
 
+    //== Constructor ==
     public Person(String firstName, String lastName) {
         FirstName = firstName;
         LastName = lastName;
@@ -13,6 +17,7 @@ public class Person {
     public Person() {
     }
 
+    // == getters and setters ==
     public String getFirstName() {
         return FirstName;
     }
@@ -29,6 +34,7 @@ public class Person {
         LastName = lastName;
     }
 
+    //== to string object ==
     @Override
     public String toString() {
         return "Person{" +
